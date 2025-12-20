@@ -4,11 +4,17 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "*", // allow any hostname
-        pathname: "/**", // allow all paths
+        hostname: "*",
+        pathname: "/**",
       },
     ],
   },
+  // Add this to satisfy Turbopack
+  turbopack: {},
+  // OR if you want to use webpack instead:
+  // experimental: {
+  //   turbo: {}
+  // }
 };
 
 export default nextConfig;
