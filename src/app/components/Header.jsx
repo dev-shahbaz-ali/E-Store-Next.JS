@@ -23,7 +23,7 @@ const Header = () => {
             placeholder="Search For Products....."
             className="text-gray-800 px-4 py-3 outline-none border border-gray-300 rounded-l-full w-full cursor-pointer focus:border-pink-500 focus:ring-1 focus:ring-pink-500"
           />
-          <button className="bg-pink-500 text-white rounded-r-full px-4 md:px-6 py-4 border-none cursor-pointer hover:bg-pink-600 transition-colors">
+          <button className="bg-pink-500 text-white rounded-r-full px-4 md:px-6 py-[16] border-none cursor-pointer hover:bg-pink-600 transition-colors">
             <FaSearch size={18} />
           </button>
         </div>
@@ -37,7 +37,7 @@ const Header = () => {
 export default Header;
 
 const NavBar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <nav className="flex items-center space-x-4 md:space-x-6">
